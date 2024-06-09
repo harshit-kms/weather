@@ -12,7 +12,8 @@ async function weatherForecast(cityName){
     }
     else{
         const data = await response.json();
-        // console.log(data);
+        document.querySelector(".weather").style.display = "";
+        document.querySelector(".error").style.display = "none";
         document.querySelector(".location").innerText = data.name; 
         document.querySelector(".temp").innerText = Math.round(data.main.temp) + " °C"; 
         document.querySelector(".humidity .details-text p").innerText = data.main.humidity + "%"; 
