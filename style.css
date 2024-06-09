@@ -19,8 +19,8 @@ body{
     color: white;
     border-radius: 1.5rem;
     padding: 1rem;
-    min-height: 75vh;
-    min-width: 60vw;
+    height: auto;
+    min-width: 50vw;
     text-align: center;
 }
 
